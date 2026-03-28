@@ -169,24 +169,6 @@ PSI (85) → Attitude (88) → Purchase Intent (76) → eWOM (86)
 
 ---
 
-## ⚔️ Competitive Differentiation
-
-| Capability | Others | Ranker AI |
-|---|---|---|
-| AI Visibility Monitoring | ✓ | ✓ |
-| Brand Mention Tracking | ✓ | ✓ |
-| Sentiment Analysis | ✓ | ✓ |
-| Semantic Drift Detection | ✗ | ✓ |
-| Tone & Persona Engineering | ✗ | ✓ |
-| Knowledge Graph Alignment | ✗ | ✓ |
-| Agentic Journey Simulation | ✗ | ✓ |
-| Machine Persuasion Scoring | ✗ | ✓ |
-| Real-time Signal Deployment | ✗ | ✓ |
-| Mixture-of-Agents Orchestration | ✗ | ✓ |
-| Hallucination Prevention | ✗ | ✓ |
-| **Total** | **4/12** | **12/12** |
-
----
 
 ## 🏗️ Architecture
 
