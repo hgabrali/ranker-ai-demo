@@ -1,3 +1,8 @@
+[![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://preview--brightspark-blueprint.lovable.app/dashboard)
+[![Dashboard](https://img.shields.io/badge/Dashboard-P%26G%20Analysis-blue)](https://preview--brightspark-blueprint.lovable.app/dashboard)
+[![License](https://img.shields.io/badge/License-Proprietary-red)](LICENSE)
+[![Stack](https://img.shields.io/badge/Stack-FastAPI%20%7C%20React%20%7C%20Supabase-purple)](https://github.com/hgabrali/ranker-ai-demo)
+
 <div align="center">
 
 <img src="assets/screenshots/ranker-ai-banner.png" alt="Ranker AI" width="75%"/>
