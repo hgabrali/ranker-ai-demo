@@ -275,6 +275,15 @@ docker compose up -d
 
 ## 📁 Project Structure
 
+This demo repository is part of a larger modular ecosystem:
+
+| Repository | Description | Access |
+|---|---|---|
+| **ranker-ai** | Core AI engine & backend services | 🔒 Private |
+| **semantic-visibility-dashboard** | Real-time analytics dashboard | 🔒 Private |
+| **data-visualization-studio** | Data visualization & reporting | 🔒 Private |
+| **ranker-ai-demo** | Public demo & documentation | 🌐 Public |
+
 ```
 ranker-ai-demo/
 ├── assets/
