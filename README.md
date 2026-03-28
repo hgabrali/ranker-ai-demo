@@ -246,7 +246,7 @@ As AI agents increasingly complete transactional decisions on behalf of users, b
 | Colgate-Palmolive | 52 | Global |
 | Kimberly-Clark | 48 | Global |
 
-<kbd><img title="Competitor Intelligence" src="assets/screenshots/02-competitor-table.png"/></kbd><br/>
+
 
 ### Mixture-of-Agents Scorecard
 
