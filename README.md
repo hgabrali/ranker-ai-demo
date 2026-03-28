@@ -1,89 +1,142 @@
-[![License](https://img.shields.io/badge/License-Proprietary-red)](LICENSE)
-[![Stack](https://img.shields.io/badge/Stack-FastAPI%20%7C%20React%20%7C%20Supabase-purple)](https://github.com/hgabrali/ranker-ai-demo)
+# Ranker AI — Demo Repository
 
-<div align="center">
-
-<img src="assets/screenshots/ranker-ai-banner.png" alt="Ranker AI" width="75%"/>
-
-<h3>Brand Intelligence for the Agentic Web</h3>
-
-<br/>
-
-[![GitHub Stars](https://img.shields.io/github/stars/hgabrali/ranker-ai-demo?style=flat-square&color=DAA520)](https://github.com/hgabrali/ranker-ai-demo/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/hgabrali/ranker-ai-demo?style=flat-square)](https://github.com/hgabrali/ranker-ai-demo/network)
-[![GitHub Issues](https://img.shields.io/github/issues/hgabrali/ranker-ai-demo?style=flat-square)](https://github.com/hgabrali/ranker-ai-demo/issues)
-[![License](https://img.shields.io/badge/License-Proprietary-blue?style=flat-square)](LICENSE)
-
-<br/>
-
-[Documentation](#-architecture) · [Report Bug](https://github.com/hgabrali/ranker-ai-demo/issues)
-
-</div>
+> **Portfolio & Learning Project** · 23 February 2026 – 28 March 2026  
+> Developed as part of an applied research cycle in ML Engineering, AEO/GEO market analysis, and full-stack AI product development.
 
 ---
 
-## ⚡ Overview
+## Table of Contents
 
-**Ranker AI** is a next-generation brand intelligence platform purpose-built for the agentic web. While most AEO (Answer Engine Optimization) tools stop at passive analytics — monitoring mentions, tracking visibility scores, reporting sentiment — Ranker AI goes further by **actively engineering how AI agents perceive, rank, and recommend your brand**.
+1. [Project Background](#project-background)
+2. [Overview](#overview)
+3. [How It Works](#how-it-works)
+4. [Case Study](#case-study--pg--fmcg-global-analysis)
+5. [Influencer Intelligence Module](#influencer-intelligence-module)
+6. [Architecture](#architecture)
+7. [Tech Stack](#tech-stack)
+8. [Quick Start](#quick-start)
+9. [Project Structure](#project-structure)
+10. [Roadmap](#roadmap)
 
-> When a consumer says *"Find me the best product"* to an AI agent, the consumer delegates the decision. This is **Delegated Cognition** — and it changes everything about how brands must communicate.
+---
+
+## Project Background
+
+### Research Period
+**23 February 2026 – 28 March 2026** (33 days)
+
+---
+
+### 1. Objectives
+
+This project was initiated as a structured learning exercise with three parallel goals:
+
+- **Market Understanding** — Analyse the AEO (Answer Engine Optimisation) and GEO (Generative Engine Optimisation) landscape to understand what AI-visibility products do at a feature and architecture level.
+- **Product Scope Definition** — Map the gap between existing monitoring-centric tools and ML-pipeline-centric approaches to determine a feasible differentiation axis.
+- **Technical Practice** — Apply a production-oriented web stack (Vite + React + TypeScript + Supabase + FastAPI) in the context of a domain-relevant portfolio project, with emphasis on ML model integration (XGBoost, XLM-RoBERTa) and multi-agent orchestration.
+
+---
+
+### 2. Methodology
+
+#### 2.1 Competitive Analysis
+
+The following platforms were investigated through documentation review, third-party comparisons, and public feature disclosures:
+
+| Platform | Category | Funding | Notable Capability |
+|---|---|---|---|
+| Profound | Enterprise GEO | $58.5M (Sequoia) | Agent Analytics, 400M+ prompt dataset, SOC-2 Type II |
+| Peec AI | SMB Monitoring | $29M (20VC) | UI-scraping methodology, dual brand/source visibility |
+| Goodie AI | AEO/GEO | Custom enterprise | End-to-end optimisation hub, hallucination detection |
+| xSeek | Monitoring + Action | — | 6-engine coverage, built-in AI strategists |
+
+#### 2.2 Feature Mapping
+
+A preliminary capability matrix was constructed comparing 12 feature dimensions across the above platforms, including sentiment analysis, knowledge graph alignment, agentic journey simulation, and hallucination prevention.
+
+> ⚠️ **Methodological Note:** The competitive matrix in this repository represents a first-pass draft based on publicly available information as of March 2026. It has not been fully validated against vendor API documentation. Scores for competitor platforms are likely understated — particularly for Profound, which offers Agent Analytics, agentic workflow automation, and hallucination provenance tracking. The matrix should be treated as directional, not authoritative, and is flagged for revision in the next iteration.
+
+#### 2.3 Key Concepts Studied
+
+- Hallucination tracking and citation provenance in LLM-generated responses
+- Knowledge graph alignment and entity-level brand representation
+- Agentic search behaviour, multi-step query fan-out, and delegated cognition
+- Share-of-voice (SoV) as a proxy metric for AI visibility
+- PSI-Composite modelling for influencer scoring (structural equation methodology)
+- Multi-agent orchestration patterns across heterogeneous LLMs
+
+---
+
+### 3. Findings
+
+**Finding 1 — Market is monitoring-heavy, action-light.**  
+The majority of surveyed platforms track brand visibility across LLMs but stop short of prescriptive ML-driven recommendations. Actionability is typically limited to manually curated content suggestions rather than automated signal engineering.
+
+**Finding 2 — No ML/ranking-pipeline-centric tool identified.**  
+Existing tools treat LLM citation ranking as a black box. None of the surveyed platforms expose or directly optimise the underlying scoring and retrieval signals — embedding similarity, re-ranking weights, knowledge graph entity confidence — that determine citation order in AI-generated responses.
+
+**Finding 3 — Differentiation axis for Ranker AI.**  
+The identified gap sits at the intersection of **ranking algorithm transparency** and **active AI visibility engineering** — an area aligned with ML Engineering skills (embedding models, NDCG/MRR metrics, similarity search, reranking) rather than traditional SEO or passive monitoring.
+
+**Finding 4 — "Delegated Cognition" as a framing shift.**  
+As AI agents increasingly complete transactional decisions on behalf of users, brand optimisation must shift target from human cognitive biases to the inference-time signals that cause an agent to select, cite, or transact with a brand. This framing shaped Ranker AI's product direction.
+
+---
+
+### 4. Next Steps
+
+- [ ] Implement a baseline ranking pipeline with documented design decisions
+- [ ] Add standard IR evaluation metrics: NDCG, MRR, Precision@K
+- [ ] Revise competitive feature matrix against verified vendor API documentation
+- [ ] Deploy a minimal demo endpoint exposing the AEO scoring pipeline
+- [ ] Add baseline model comparisons (TF-IDF vs. embedding-based vs. XGBoost)
+- [ ] Document architectural decisions in `/docs/architecture.md`
+
+---
+
+## Overview
+
+Ranker AI is a next-generation brand intelligence platform purpose-built for the agentic web. While most AEO tools stop at passive analytics — monitoring mentions, tracking visibility scores, reporting sentiment — Ranker AI goes further by actively engineering how AI agents perceive, rank, and recommend your brand.
+
+When a consumer says *"Find me the best product"* to an AI agent, the consumer delegates the decision. This is **Delegated Cognition** — and it changes everything about how brands must communicate.
 
 Traditional marketing targeted human cognitive biases. Ranker AI targets **Agentic Persuasion Parameters (APP)** — the signals that cause an AI to select, cite, or transact with a brand over its competitors.
 
 ### Why Ranker AI?
 
-- **Active Engineering, Not Passive Tracking** — We don't just tell you where you stand; we change where you stand
-- **Mixture-of-Agents Orchestration** — Parallel analysis across 5 leading LLMs (GPT-4o, Gemini, Claude, Perplexity, Llama)
-- **Hallucination Prevention** — Real-time truth-sync to eliminate AI misinformation about your brand
-- **Semantic Drift Correction** — Detect and correct how AI models' perception of your brand shifts over time
-- **Influencer Intelligence** — Academically grounded PSI-Composite scoring beyond follower counts
+| Capability | Description |
+|---|---|
+| **Active Engineering, Not Passive Tracking** | We don't just report where you stand — we change where you stand |
+| **Mixture-of-Agents Orchestration** | Parallel analysis across 5 LLMs: GPT-4o, Gemini, Claude, Perplexity, Llama |
+| **Hallucination Prevention** | Real-time truth-sync to eliminate AI misinformation about your brand |
+| **Semantic Drift Correction** | Detect and correct how AI models' perception of your brand shifts over time |
+| **Influencer Intelligence** | Academically grounded PSI-Composite scoring beyond follower counts |
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-<table>
-<tr>
-<td><img src="assets/screenshots/03-pg-aeo-scorecard.png" alt="AEO Scorecard" width="100%"/></td>
-<td><img src="assets/screenshots/05-share-of-model-trend.png" alt="Share of Model" width="100%"/></td>
-</tr>
-<tr>
-<td><img src="assets/screenshots/06-semantic-drift.png" alt="Semantic Drift" width="100%"/></td>
-<td><img src="assets/screenshots/07-mixture-agents-scorecard.png" alt="MoA Scorecard" width="100%"/></td>
-</tr>
-<tr>
-<td><img src="assets/screenshots/10-lisa-lena-psi-profile.png" alt="PSI Profile" width="100%"/></td>
-<td><img src="assets/screenshots/08-geo-budget-correlation.png" alt="GEO Budget" width="100%"/></td>
-</tr>
-</table>
-</div>
-
----
-
-## 🔄 How It Works
+## How It Works
 
 ```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │  Data Ingestion │────▶│    Analysis      │────▶│    Scoring      │────▶│    Output       │
 │                 │     │                  │     │                 │     │                 │
 │ • LLM Crawlers  │     │ • Sentiment      │     │ • AEO Score v3  │     │ • Dashboard     │
-│ • Knowledge Graph│     │ • Drift Detection │     │ • Persona Amp.  │     │ • PDF Reports   │
-│ • Social Listeners│     │ • Hallucination  │     │ • Tone Alignment│     │ • API Endpoints │
+│ • Knowledge Graph│    │ • Drift Detection│     │ • Persona Amp.  │     │ • PDF Reports   │
+│ • Social Listeners│   │ • Hallucination  │     │ • Tone Alignment│     │ • API Endpoints │
 └─────────────────┘     └──────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
-1. **Connect Your Brand** — Define your brand truth, tone guidelines, and target personas
-2. **Monitor AI Engines** — We query leading AI models and track every mention, recommendation, and citation
-3. **Measure & Optimize** — Get actionable insights with AEO scores, causal impact analysis, and weekly action plans
+1. **Connect Your Brand** — Define brand truth, tone guidelines, and target personas
+2. **Monitor AI Engines** — Query leading AI models; track every mention, recommendation, and citation
+3. **Measure & Optimise** — Get actionable insights via AEO scores, causal impact analysis, and weekly action plans
 
 ---
 
-## 🏢 Case Study — P&G · FMCG Global Analysis
+## Case Study — P&G · FMCG Global Analysis
 
 ### AI Visibility Dashboard
 
-**P&G AEO Score: 76.0** — tracked across 5 AI engines simultaneously.
+> P&G AEO Score: **76.0** — tracked across 5 AI engines simultaneously.
 
 | Metric | Value |
 |---|---|
@@ -98,17 +151,13 @@ Traditional marketing targeted human cognitive biases. Ranker AI targets **Agent
 
 | Brand | ACUR Score | Category |
 |---|---|---|
-| ⭐ P&G | **82** | Your Brand |
+| ⭐ P&G | 82 | Your Brand |
 | Unilever | 74 | Global |
 | Henkel | 61 | Europe |
 | Reckitt | 58 | Europe |
 | Beiersdorf | 55 | Europe |
 | Colgate-Palmolive | 52 | Global |
 | Kimberly-Clark | 48 | Global |
-
-### Share of Model Trend (30 days)
-
-P&G's AI visibility growing consistently across GPT-4o (75%), Gemini (73%), and Perplexity (69%).
 
 ### Mixture-of-Agents Scorecard
 
@@ -120,22 +169,23 @@ P&G's AI visibility growing consistently across GPT-4o (75%), Gemini (73%), and 
 | Claude 3.5 | 62% | 85 | 91% | 1,050ms | Good |
 | Llama 3.1 | 44% | 68 | 79% | 1,890ms | Needs Attention |
 
-### GEO-Budget Correlation (R² = 0.94)
+### GEO-Budget Correlation
 
-Strong correlation between ad spend and AI visibility score — R² = 0.94 across Google, Meta, and TikTok channels.
+Strong correlation between ad spend and AI visibility score — **R² = 0.94** across Google, Meta, and TikTok channels.
+
+> P&G's AI visibility growing consistently: GPT-4o (75%), Gemini (73%), Perplexity (69%).
 
 ---
 
-## 🎯 Influencer Intelligence Module
+## Influencer Intelligence Module
 
-Academically grounded influencer scoring based on the **PSI-Composite model** (structural equation methodology).
+Academically grounded influencer scoring based on the **PSI-Composite model** (structural equation methodology). Measures psychological fit, perceived similarity, ad scepticism, and predicted word-of-mouth impact — beyond follower counts.
 
-> Beyond follower counts — measuring psychological fit, perceived similarity, ad skepticism, and predicted word-of-mouth impact.
-
-**Composite Formula:**
+### Composite Formula
 
 ```
-IQ = (PSI × 0.30) + (Familiarity × 0.20) + (Likability × 0.20) + (Similarity × 0.20) − (Ad Skepticism × 0.10)
+IQ = (PSI × 0.30) + (Familiarity × 0.20) + (Likability × 0.20)
+   + (Similarity × 0.20) − (Ad Skepticism × 0.10)
 ```
 
 ### Case Study — Lisa und Lena · Germany Market 🇩🇪
@@ -152,7 +202,6 @@ IQ = (PSI × 0.30) + (Familiarity × 0.20) + (Likability × 0.20) + (Similarity 
 | **PSI Total** | **85** |
 
 **Causality Chain:**
-
 ```
 PSI (85) → Attitude (88) → Purchase Intent (76) → eWOM (86)
 ```
@@ -162,73 +211,43 @@ PSI (85) → Attitude (88) → Purchase Intent (76) → eWOM (86)
 | Avg. Confidence | 85% |
 | Total Predicted Conversions | 1,555 |
 | eWOM Score | 86% |
-| Ad Skepticism Risk | Low |
+| Ad Scepticism Risk | Low |
 | Projected ROI | 9,999% |
 | Campaign Cost | €45,000 |
 | Reach Estimate | 5,100,000 |
 
 ---
 
+## Architecture
 
-## 🏗️ Architecture
-
-```mermaid
-graph LR
-    A[Data Ingestion] --> B[Analysis Engine]
-    B --> C[Scoring Layer]
-    C --> D[Output]
-
-    subgraph Data Ingestion
-        A1[LLM Crawlers]
-        A2[Knowledge Graph]
-        A3[Social Listeners]
-    end
-
-    subgraph Analysis Engine
-        B1[Sentiment Analysis]
-        B2[Drift Detection]
-        B3[Hallucination Check]
-    end
-
-    subgraph Scoring Layer
-        C1[AEO Score v3]
-        C2[Persona Amplifier]
-        C3[Tone Alignment]
-    end
-
-    subgraph Output
-        D1[Dashboard]
-        D2[PDF Reports]
-        D3[API Endpoints]
-    end
-```
+*See `/docs/architecture.md` (in progress)*
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
-| **Frontend** | React · TypeScript · Vite · Tailwind CSS · Zustand |
-| **Backend** | FastAPI · Python · AWS ECS Fargate |
-| **Database** | Supabase (PostgreSQL) |
-| **AI Engines** | Claude · GPT-4o · Perplexity · Llama 3 · Nova |
-| **ML Models** | XGBoost (AEO) · XLM-RoBERTa (Sentiment) · PSI-Composite |
-| **Automation** | n8n (5 LLM parallel workflow) |
-| **Scraping** | BrightData MCP |
-| **Infrastructure** | AWS Copilot · GitHub Actions · Docker |
+| Frontend | React · TypeScript · Vite · Tailwind CSS · Zustand |
+| Backend | FastAPI · Python · AWS ECS Fargate |
+| Database | Supabase (PostgreSQL) |
+| AI Engines | Claude · GPT-4o · Perplexity · Llama 3 · Nova |
+| ML Models | XGBoost (AEO Scoring) · XLM-RoBERTa (Sentiment) · PSI-Composite |
+| Automation | n8n (5 LLM parallel workflow) |
+| Scraping | BrightData MCP |
+| Infrastructure | AWS Copilot · GitHub Actions · Docker |
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
 | Tool | Version | Description |
 |---|---|---|
-| **Node.js** | 18+ | Frontend runtime |
-| **Python** | ≥3.11 | Backend runtime |
-| **Docker** | Latest | Container orchestration |
+| Node.js | 18+ | Frontend runtime |
+| Python | ≥ 3.11 | Backend runtime |
+| Docker | Latest | Container orchestration |
 
 ### Installation
 
@@ -244,27 +263,26 @@ npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+Application available at `http://localhost:5173`
 
 ### Docker Deployment
 
 ```bash
-# Build and start with Docker Compose
 docker compose up -d
 ```
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 This demo repository is part of a larger modular ecosystem:
 
 | Repository | Description | Access |
 |---|---|---|
-| **ranker-ai** | Core AI engine & backend services | 🔒 Private |
-| **semantic-visibility-dashboard** | Real-time analytics dashboard | 🔒 Private |
-| **data-visualization-studio** | Data visualization & reporting | 🔒 Private |
-| **ranker-ai-demo** | Public demo & documentation | 🌐 Public |
+| `ranker-ai` | Core AI engine & backend services | 🔒 Private |
+| `semantic-visibility-dashboard` | Real-time analytics dashboard | 🔒 Private |
+| `data-visualization-studio` | Data visualisation & reporting | 🔒 Private |
+| `ranker-ai-demo` | Public demo & documentation | 🌐 Public |
 
 ```
 ranker-ai-demo/
@@ -277,56 +295,56 @@ ranker-ai-demo/
 │   ├── lib/               # Utility functions
 │   └── types/             # TypeScript definitions
 ├── public/                # Static assets
+├── docs/
+│   └── architecture.md    # (in progress)
 ├── README.md
 └── package.json
 ```
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
-- [x] AEO Score Engine (v3) with 5 LLM parallel analysis
+### Completed
+- [x] AEO Score Engine (v3) with 5-LLM parallel analysis
 - [x] Semantic Drift Detection & Timeline
 - [x] Mixture-of-Agents Scorecard
 - [x] PSI-Composite Influencer Intelligence
 - [x] GEO-Budget Correlation Analysis
 - [x] Competitor Intelligence Dashboard
+
+### In Progress
 - [ ] Real-time Signal Deployment API
 - [ ] Knowledge Graph Auto-Alignment
 - [ ] Agentic Journey Simulation Engine
+- [ ] Ranking pipeline with NDCG / MRR / Precision@K metrics
+- [ ] Baseline model comparison (TF-IDF vs. embedding-based vs. XGBoost)
+- [ ] Revised competitive feature matrix (vendor-verified)
+
+### Planned
 - [ ] Multi-language Support (DE, TR, FR)
 - [ ] Enterprise SSO & Team Management
+- [ ] `/docs/architecture.md` — full system design documentation
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome. Please follow standard Git flow:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is proprietary software. See [LICENSE](LICENSE) for details.
+```bash
+git checkout -b feature/your-feature
+git commit -m 'feat: describe your change'
+git push origin feature/your-feature
+# Open a Pull Request
+```
 
 ---
 
-<div align="center">
+## License
 
-**[Report Bug](https://github.com/hgabrali/ranker-ai-demo/issues)**
+This project is proprietary software. See `LICENSE` for details.
 
-<br/>
+---
 
-*© 2026 Ranker AI. Brand Intelligence for the Agentic Web.*
-
-<br/>
-
-<sub>Built with ❤️</sub>
-
-</div>
+*Built as part of an ML Engineering portfolio — MasterSchool · IBM AI Certificate · Google ML Certificate · 2026*
