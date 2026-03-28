@@ -78,7 +78,10 @@ Ranker AI provides:
 
 **Competitor Intelligence Table**
 
-<kbd><img title="Competitor Table" src="assets/screenshots/02-competitor-table.png"/></kbd><br/>
+
+
+<kbd><img title="Competitor Intelligence Table" src="https://github.com/user-attachments/assets/c1b1d210-818b-451c-aa98-aac39e635853"/></kbd><br/>
+
 
 **Mixture-of-Agents Scorecard**
 
