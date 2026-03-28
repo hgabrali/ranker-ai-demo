@@ -42,7 +42,7 @@ Ranker AI targets **Agentic Persuasion Parameters (APP)** — the signals that c
 
 ---
 
-### Competitor Intelligence — FMCG Europe
+### Competitor Intelligence — FMCG Europe 
 
 
 | Brand | ACUR Score | Category |
