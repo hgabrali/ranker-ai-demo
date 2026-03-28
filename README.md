@@ -347,4 +347,4 @@ This project is proprietary software. See `LICENSE` for details.
 
 ---
 
-*Built as part of an ML Engineering portfolio — MasterSchool · IBM AI Certificate · Google ML Certificate · 2026*
+*Built as part of an ML Engineering portfolio — MasterSchool · 2026*
