@@ -345,6 +345,6 @@ This project is proprietary software. See [LICENSE](LICENSE) for details.
 
 <br/>
 
-<sub>Built with ❤️ by the Ranker AI Team</sub>
+<sub>Built with ❤️</sub>
 
 </div>
