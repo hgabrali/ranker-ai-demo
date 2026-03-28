@@ -7,7 +7,7 @@
 
 <img src="assets/screenshots/ranker-ai-banner.png" alt="Ranker AI" width="75%"/>
 
-<h3>Brand Intelligence for the Agentic Web</h3>
+<h3>Brand Intelligence for the Agentic Web</h3> 
 
 
 
