@@ -4,7 +4,7 @@
 
 <h3>Brand Intelligence for the Agentic Web</h3>
 
-<em>The World's First Machine Persuasion Engine — They Track. We Engineer.</em>
+
 
 <br/>
 
