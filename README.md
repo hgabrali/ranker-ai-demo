@@ -17,7 +17,7 @@ alt="Ranker AI Banner"
 
 # Ranker AI
 
-A next-generation brand intelligence platform purpose-built for the agentic web.
+A brand-intelligence prototype exploring AI visibility on the agentic web.
 
 ![License](https://img.shields.io/badge/License-Proprietary-red.svg)
 ![Built With](https://img.shields.io/badge/Built_With-React_%7C_TypeScript_%7C_Vite-blue.svg)
@@ -57,7 +57,7 @@ A next-generation brand intelligence platform purpose-built for the agentic web.
 
 ## Why Ranker AI?
 
-Ranker AI is a modern brand intelligence and AI visibility engineering platform. While most AEO tools stop at passive analytics — monitoring mentions, tracking visibility scores, reporting sentiment — Ranker AI aims to go further by **actively engineering** how AI agents perceive, rank, and recommend your brand.
+Ranker AI is a prototype exploring brand intelligence and AI-visibility engineering. While most AEO tools stop at passive analytics — monitoring mentions, tracking visibility scores, reporting sentiment — Ranker AI aims to go further by **actively engineering** how AI agents perceive, rank, and recommend your brand.
 
 When a consumer says *"Find me the best product"* to an AI agent, the consumer delegates the decision. This is **Delegated Cognition** — and it changes everything about how brands must communicate.
 
@@ -155,7 +155,7 @@ Ranker AI provides:
 
 1. **Connect Your Brand** — Define brand truth, tone guidelines, and target personas
 2. **Monitor AI Engines** — Query leading AI models; track every mention, recommendation, and citation
-3. **Measure & Optimise** — Get actionable insights via AEO scores, causal impact analysis, and weekly action plans
+3. **Measure & Optimise** — Get actionable insights via AEO scores, correlational impact analysis, and weekly action plans
 
 ---
 
@@ -177,7 +177,7 @@ This project was initiated as a structured learning exercise with three parallel
 
 #### Competitive Analysis
 
-The following platforms were investigated through documentation review, third-party comparisons, and public feature disclosures:
+The following platforms were investigated through documentation review, third-party comparisons, and public feature disclosures. Funding figures are approximate, drawn from public reporting as of March 2026, and may be out of date:
 
 | Platform | Category | Funding | Notable Capability |
 |---|---|---|---|
@@ -307,7 +307,7 @@ IQ = (PSI × 0.30) + (Familiarity × 0.20) + (Likability × 0.20)
 | Familiarity Depth | 79 |
 | **PSI Total** | **85** |
 
-**Causality Chain:**
+**Hypothesized pathway (illustrative):**
 ```
 PSI (85) → Attitude (88) → Purchase Intent (76) → eWOM (86)
 ```
