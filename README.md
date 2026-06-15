@@ -1,18 +1,18 @@
 <!--
-  Ranker AI — Brand Intelligence for the Agentic Web
-  Portfolio & Learning Project · 23 February 2026 – 28 March 2026
+Ranker AI — Brand Intelligence for the Agentic Web
+Portfolio & Learning Project · 23 February 2026 – 28 March 2026
 -->
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="assets/screenshots/ranker-ai-banner.png"
-  />
-  <img
-    width="600"
-    src="assets/screenshots/ranker-ai-banner.png"
-    alt="Ranker AI Banner"
-  />
+<source
+media="(prefers-color-scheme: dark)"
+srcset="assets/screenshots/ranker-ai-banner.png"
+/>
+<img
+width="600"
+src="assets/screenshots/ranker-ai-banner.png"
+alt="Ranker AI Banner"
+/>
 </picture>
 
 # Ranker AI
@@ -33,12 +33,22 @@ A next-generation brand intelligence platform purpose-built for the agentic web.
 
 ---
 
+> ### Research Framing & Demo Disclaimer
+>
+> Ranker AI is an **early-stage portfolio and learning project**, not a commercial product or a validated measurement system. It demonstrates product thinking, UI engineering, and ML pipeline design around AEO/GEO and influencer analytics.
+>
+> **All brand names, scores, and figures in the case studies below (P&G, the competitor table, the Mixture-of-Agents scorecard, the GEO-budget analysis, and the Lisa und Lena influencer study) are illustrative / synthetic and are provided for demonstration purposes only. They do not represent real measurements of the named companies or individuals.**
+>
+> The goal of this repository is to show *how* such a system could be designed and what the resulting interface would look like — not to publish empirical results. Methods that are described as research-grade (e.g. ranking evaluation with NDCG/MRR) are tracked as open work items in the roadmap.
+
+---
+
 ## Documentation
 
 - [**Project Background**](#project-background) — Research methodology, competitive analysis, and key findings
 - [**Overview**](#overview) — What Ranker AI does and why it matters
 - [**How It Works**](#how-it-works) — Architecture pipeline from ingestion to output
-- [**Case Study: P&G**](#case-study--pg--fmcg-global-analysis) — Live FMCG analysis with AEO scoring
+- [**Case Study: P&G**](#case-study--pg--fmcg-global-analysis) — Illustrative FMCG analysis with AEO scoring
 - [**Influencer Intelligence**](#influencer-intelligence-module) — PSI-Composite model & Lisa und Lena case study
 
 [Why Ranker AI?](#why-ranker-ai) | [Tech Stack](#tech-stack) | [Quick Start](#quick-start) | [Roadmap](#roadmap) | [Contributing](#contributing)
@@ -47,15 +57,15 @@ A next-generation brand intelligence platform purpose-built for the agentic web.
 
 ## Why Ranker AI?
 
-Ranker AI is a modern brand intelligence and AI visibility engineering platform. While most AEO tools stop at passive analytics — monitoring mentions, tracking visibility scores, reporting sentiment — Ranker AI goes further by **actively engineering** how AI agents perceive, rank, and recommend your brand.
+Ranker AI is a modern brand intelligence and AI visibility engineering platform. While most AEO tools stop at passive analytics — monitoring mentions, tracking visibility scores, reporting sentiment — Ranker AI aims to go further by **actively engineering** how AI agents perceive, rank, and recommend your brand.
 
 When a consumer says *"Find me the best product"* to an AI agent, the consumer delegates the decision. This is **Delegated Cognition** — and it changes everything about how brands must communicate.
 
 Ranker AI provides:
 
-- **Active Engineering, Not Passive Tracking** — we don't just report where you stand; we change where you stand
+- **Active Engineering, Not Passive Tracking** — we don't just report where you stand; we change where you stand *(product vision)*
 - **Mixture-of-Agents Orchestration** — parallel analysis across 5 LLMs: GPT-4o, Gemini, Claude, Perplexity, Llama
-- **Hallucination Prevention** — real-time truth-sync to eliminate AI misinformation about your brand
+- **Hallucination Mitigation** — truth-sync designed to detect, reduce, and flag AI misinformation about your brand
 - **Semantic Drift Correction** — detect and correct how AI models' perception of your brand shifts over time
 - **Influencer Intelligence** — academically grounded PSI-Composite scoring beyond follower counts
 - **Agentic Persuasion Parameters (APP)** — target the inference-time signals that cause an AI to select, cite, or transact with a brand
@@ -63,6 +73,8 @@ Ranker AI provides:
 ---
 
 ## Screenshots & Demos
+
+> All dashboards below display **illustrative / synthetic data** for demonstration only.
 
 **Hero — AI Visibility Dashboard**
 
@@ -78,10 +90,7 @@ Ranker AI provides:
 
 **Competitor Intelligence Table**
 
-
-
 <kbd><img title="Competitor Intelligence Table" src="https://github.com/user-attachments/assets/c1b1d210-818b-451c-aa98-aac39e635853"/></kbd><br/>
-
 
 **Mixture-of-Agents Scorecard**
 
@@ -135,13 +144,13 @@ Ranker AI provides:
 
 ## How It Works
 ```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│  Data Ingestion │────▶│    Analysis      │────▶│    Scoring      │────▶│     Output      │
-│                 │     │                  │     │                 │     │                 │
-│ • LLM Crawlers  │     │ • Sentiment      │     │ • AEO Score v3  │     │ • Dashboard     │
-│ • Knowledge Graph│    │ • Drift Detection│     │ • Persona Amp.  │     │ • PDF Reports   │
-│ • Social Listeners│   │ • Hallucination  │     │ • Tone Alignment│     │ • API Endpoints │
-└─────────────────┘     └──────────────────┘     └─────────────────┘     └─────────────────┘
+┌─────────────────┐ ┌──────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│ Data Ingestion │────▶│ Analysis │────▶│ Scoring │────▶│ Output │
+│ │ │ │ │ │ │ │
+│ • LLM Crawlers │ │ • Sentiment │ │ • AEO Score │ │ • Dashboard │
+│ • Knowledge Graph│ │ • Drift Detection│ │ • Persona Amp. │ │ • PDF Reports │
+│ • Social Listeners│ │ • Hallucination │ │ • Tone Alignment│ │ • API Endpoints │
+└─────────────────┘ └──────────────────┘ └─────────────────┘ └─────────────────┘
 ```
 
 1. **Connect Your Brand** — Define brand truth, tone guidelines, and target personas
@@ -219,6 +228,8 @@ As AI agents increasingly complete transactional decisions on behalf of users, b
 
 ## Case Study — P&G · FMCG Global Analysis
 
+> **Illustrative example.** All brand names, scores, and figures in this case study are illustrative / synthetic for demonstration only and do not represent measurements of the named companies.
+
 ### AI Visibility Dashboard
 
 > P&G AEO Score: **76.0** — tracked across 5 AI engines simultaneously.
@@ -246,8 +257,6 @@ As AI agents increasingly complete transactional decisions on behalf of users, b
 | Colgate-Palmolive | 52 | Global |
 | Kimberly-Clark | 48 | Global |
 
-
-
 ### Mixture-of-Agents Scorecard
 
 | Model | Share of Model | Sentiment | Accuracy | Latency | Status |
@@ -262,7 +271,7 @@ As AI agents increasingly complete transactional decisions on behalf of users, b
 
 ### GEO-Budget Correlation
 
-Strong correlation between ad spend and AI visibility score — **R² = 0.94** across Google, Meta, and TikTok channels.
+Illustrative relationship between ad spend and AI visibility score across Google, Meta, and TikTok channels *(illustrative, simulated data — not fitted to real measurements)*.
 
 > P&G's AI visibility growing consistently: GPT-4o (75%), Gemini (73%), Perplexity (69%).
 
@@ -272,15 +281,20 @@ Strong correlation between ad spend and AI visibility score — **R² = 0.94** a
 
 ## Influencer Intelligence Module
 
-Academically grounded influencer scoring based on the **PSI-Composite model** (structural equation methodology). Measures psychological fit, perceived similarity, ad scepticism, and predicted word-of-mouth impact — beyond follower counts.
+Academically grounded influencer scoring based on the **PSI-Composite model** (parasocial-interaction construct, structural equation methodology). Measures psychological fit, perceived similarity, ad scepticism, and predicted word-of-mouth impact — beyond follower counts.
 
 ### Composite Formula
+
+> *Illustrative weighting — the coefficients below are placeholders for demonstration and are not empirically calibrated.*
+
 ```
 IQ = (PSI × 0.30) + (Familiarity × 0.20) + (Likability × 0.20)
-   + (Similarity × 0.20) − (Ad Skepticism × 0.10)
++ (Similarity × 0.20) − (Ad Skepticism × 0.10)
 ```
 
 ### Case Study — Lisa und Lena · Germany Market 🇩🇪
+
+> **Illustrative example.** All names, scores, and figures in this case study are illustrative / synthetic for demonstration only and do not represent measurements of the named individuals.
 
 | Dimension | Score |
 |---|---|
@@ -300,13 +314,9 @@ PSI (85) → Attitude (88) → Purchase Intent (76) → eWOM (86)
 
 | Metric | Value |
 |---|---|
-| Avg. Confidence | 85% |
-| Total Predicted Conversions | 1,555 |
-| eWOM Score | 86% |
+| Avg. Confidence | 85% (illustrative) |
+| eWOM Score | 86% (illustrative) |
 | Ad Scepticism Risk | Low |
-| Projected ROI | 9,999% |
-| Campaign Cost | €45,000 |
-| Reach Estimate | 5,100,000 |
 
 <kbd><img title="Lisa Lena PSI" src="assets/screenshots/10-lisa-lena-psi-profile.png"/></kbd><br/>
 <kbd><img title="Causality Chain" src="assets/screenshots/12-causality-chain.png"/></kbd><br/>
@@ -380,16 +390,16 @@ This demo repository is part of a larger modular ecosystem:
 ```
 ranker-ai-demo/
 ├── assets/
-│   └── screenshots/          # Dashboard & feature screenshots
+│ └── screenshots/ # Dashboard & feature screenshots
 ├── src/
-│   ├── components/           # React UI components
-│   ├── pages/                # Route pages
-│   ├── hooks/                # Custom React hooks
-│   ├── lib/                  # Utility functions
-│   └── types/                # TypeScript definitions
-├── public/                   # Static assets
+│ ├── components/ # React UI components
+│ ├── pages/ # Route pages
+│ ├── hooks/ # Custom React hooks
+│ ├── lib/ # Utility functions
+│ └── types/ # TypeScript definitions
+├── public/ # Static assets
 ├── docs/
-│   └── architecture.md       # (in progress)
+│ └── architecture.md # (in progress)
 ├── README.md
 └── package.json
 ```
@@ -398,9 +408,11 @@ ranker-ai-demo/
 
 ## Roadmap
 
-### Completed
+### Implemented (demo UI)
 
-- [x] AEO Score Engine (v3) with 5-LLM parallel analysis
+> These items have a working demonstration interface. "Implemented (demo UI)" means the interface and pipeline scaffolding exist; it does **not** mean the underlying methods have been empirically validated. Method validation (e.g. ranking evaluation) is tracked under *In Progress*.
+
+- [x] AEO Score Engine with 5-LLM parallel analysis
 - [x] Semantic Drift Detection & Timeline
 - [x] Mixture-of-Agents Scorecard
 - [x] PSI-Composite Influencer Intelligence
