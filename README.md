@@ -39,7 +39,7 @@ A next-generation brand intelligence platform purpose-built for the agentic web.
 >
 > **All brand names, scores, and figures in the case studies below (P&G, the competitor table, the Mixture-of-Agents scorecard, the GEO-budget analysis, and the Lisa und Lena influencer study) are illustrative / synthetic and are provided for demonstration purposes only. They do not represent real measurements of the named companies or individuals.**
 >
-> The goal of this repository is to show *how* such a system could be designed and what the resulting interface would look like — not to publish empirical results. Methods that are described as research-grade (e.g. ranking evaluation with NDCG/MRR) are tracked as open work items in the roadmap.
+> **Research framing:** Ranker AI was built on the advertiser (optimization) side. My doctoral research inverts the objective — using the same multi-LLM instrumentation to measure whether users can detect woven commercial content and whether disclosure restores that detection (the consumer-protection side).
 
 ---
 
